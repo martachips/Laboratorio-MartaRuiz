@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Laboratorio</title>
+
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="container">
+      <h3 class="heading">Create Account</h3>
+
+      <form id="form" novalidate>
+        <div class="form-control">
+          <label>Nombre</label><br />
+          <div id="name-input-group" class="input-group">
+            <input type="text" name="name" id="name" required />
+            <img class="input-img valid" src="images/success-icon.svg" />
+            <img class="input-img invalid" src="images/error-icon.svg" />
+          </div>
+          <span class="text-error"></span>
+        </div>
+
+        <div class="form-control">
+          <label>Email</label><br />
+          <div id="email-input-group" class="input-group">
+            <input type="email" name="email" id="email" required />
+            <img class="input-img valid" src="images/success-icon.svg" />
+            <img class="input-img invalid" src="images/error-icon.svg" />
+          </div>
+          <span class="text-error"></span>
+        </div>
+
+        <div class="form-control">
+          <label>Clave</label><br />
+          <div id="password-input-group" class="input-group">
+            <input
+              type="password"
+              name="password"
+              maxlength="8"
+              id="password"
+              required
+            />
+            <img class="input-img valid" src="images/success-icon.svg" />
+            <img class="input-img invalid" src="images/error-icon.svg" />
+          </div>
+          <span class="text-error"></span>
+        </div>
+
+        <div class="form-control">
+          <label>Confirme su clave</label><br />
+          <div id="confirm-password-input-group" class="input-group">
+            <input
+              type="password"
+              name="confirm-password"
+              maxlength="8"
+              id="confirm-password"
+              required
+            />
+            <img class="input-img valid" src="images/success-icon.svg" />
+            <img class="input-img invalid" src="images/error-icon.svg" />
+          </div>
+          <span class="text-error"></span>
+        </div>
+
+        <input type="submit" class="button" value="ENVIAR" />
+      </form>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
